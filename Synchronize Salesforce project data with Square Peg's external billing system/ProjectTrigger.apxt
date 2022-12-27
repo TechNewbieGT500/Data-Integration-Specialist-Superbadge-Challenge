@@ -1,0 +1,11 @@
+//Copy and paste all trigger code as written
+trigger ProjectTrigger on Project__c (after update) {
+    if(Trigger.isAfter && Trigger.isUpdate){
+        for(Project__c prjt : Trigger.new){
+            if(prjt.Status__c != null && prjt.Status__c.equals('Billable')){
+    //Keep the last below line of code at the extreme left indent as shown below
+BillingCalloutService.callBillingService(prjt.ProjectRef__c, prjt.Billable_Amount__c);
+            }
+        }
+    }
+}
