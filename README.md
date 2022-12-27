@@ -5,7 +5,7 @@ DATA INTEGRATION SPECIALIST SUPERBADGE
 Data Integration Specialist superbadge is designed for learning and testing integrations between different systems. 
 
 Activities you will do to complete and earn this superbadge, are:
-
+Actions to Earn This Superbadge
 Configure outbound application and integration security
 Configure inbound integration security
 Synchronize Salesforce data with external systems
